@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cirrus</title>
+  <meta name="description" content="Cirrus: um jogo de barco pelas terras oníricas de Cirrus. Em desenvolvimento por Victor Beda.">
+  <meta name="theme-color" content="#9dbde8">
+
+  <!-- Prévia quando o link é colado no X e em outros lugares -->
+  <meta property="og:title" content="Cirrus">
+  <meta property="og:description" content="Um jogo de barco pelas terras oníricas de Cirrus. Em desenvolvimento.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://konbeda.github.io/cirrus/">
+  <meta property="og:image" content="https://konbeda.github.io/cirrus/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="fonts/FreeCheese-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOPO ===== -->
+  <header class="hero">
+    <div class="ceu" aria-hidden="true">
+      <span class="nuvem n1"></span><span class="nuvem n2"></span>
+      <span class="nuvem n3"></span><span class="nuvem n4"></span>
+    </div>
+    <div class="hero-texto">
+      <!-- Logo: por enquanto é só o título em texto, na fonte do jogo -->
+      <h1 class="titulo">Cirrus</h1>
+      <p class="subtitulo">Um jogo de barco pelas terras oníricas de Cirrus.</p>
+      <p class="selo">Em desenvolvimento · demo a caminho</p>
+    </div>
+    <figure class="hero-img">
+      <img src="img/vela-cheia.webp" width="1600" height="900"
+           alt="O barco de vela azul navegando no mar quadriculado cor de areia de Cirrus">
+    </figure>
+  </header>
+
+  <main>
+
+    <!-- ===== O JOGO ===== -->
+    <section class="secao jogo" id="jogo">
+      <p class="rotulo">O jogo</p>
+      <h2>Timão na mão, vento nas costas.</h2>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <h3>Navegar</h3>
+          <p>O analógico esquerdo gira o timão e os gatilhos mexem as pás.
+             O barco tem peso, balança na onda e responde do jeito que o mar deixa.</p>
+        </article>
+        <article class="cartao">
+          <h3>Vela e correnteza</h3>
+          <p>Meia vela, vela cheia, vela rasgada. Leia a correnteza e o vento
+             e use os dois a seu favor.</p>
+          <img class="cartao-img" src="img/hud-vela.webp" width="349" height="155" loading="lazy"
+               alt="Detalhe da interface do barco mostrando meia vela, o leme e a velocidade">
+        </article>
+        <article class="cartao">
+          <h3>Cristal</h3>
+          <p>Além da vela, um cristal empurra o barco. As peças vão chegando
+             conforme você avança.</p>
+        </article>
+        <article class="cartao">
+          <h3>Missões</h3>
+          <p>Entregas, resgates e circuitos de aros, com inimigos
+             que te perseguem de arpão na mão.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== O MUNDO / GALERIA ===== -->
+    <section class="secao mundo" id="mundo">
+      <p class="rotulo">O mundo</p>
+      <h2>Bem-vindo às terras oníricas de Cirrus.</h2>
+
+      <!-- Para trocar ou adicionar prints: coloque o arquivo em img/ e copie um <button> abaixo -->
+      <div class="galeria">
+        <button class="foto larga" data-src="img/meia-vela.webp">
+          <img src="img/meia-vela.webp" loading="lazy" alt="Meia vela, com a cidade de torres ao fundo">
+        </button>
+        <button class="foto alta" data-src="img/torre.webp">
+          <img src="img/torre.webp" loading="lazy" alt="Uma torre branca de telhado pontudo atrás das dunas">
+        </button>
+        <button class="foto alta" data-src="img/navio.webp">
+          <img src="img/navio.webp" loading="lazy" alt="O barco com vela cheia e um navio maior no horizonte">
+        </button>
+        <button class="foto larga" data-src="img/circuito.webp">
+          <img src="img/circuito.webp" loading="lazy" alt="O circuito de aros amarelos da ilha do tio">
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== POR QUE EU FAÇO ===== -->
+    <section class="secao porque" id="porque">
+      <p class="rotulo">Por que eu faço o Cirrus</p>
+      <h2>Os barcos eram muito injustiçados.</h2>
+      <!-- Texto do Victor. Só foi organizado em parágrafos; as palavras são dele. -->
+      <div class="carta">
+        <p>Eu sempre gostei de jogos de veículo, e sentia que os barcos eram muito
+           injustiçados: os jogos deles focavam em outras coisas, e o navegar em si,
+           o controle do barco e tudo mais acabava ficando de lado. Não queria fazer
+           um simulador, então um jogo arcade fantasioso acabou sendo a escolha.</p>
+        <p>A ideia nasceu tentando fazer controles parecidos com os de
+           <a href="https://store.steampowered.com/app/4135570/4x4_in_a_Furniture_Store/" target="_blank" rel="noopener">4x4 in a Furniture Store</a>,
+           só que para barco. A ambientação vem de um jogo mais antigo meu, que está
+           engavetado por tempo indefinido.</p>
+        <p>O mundo do jogo é só um pedacinho de um projeto maior, que pouco a pouco
+           acho que vai conseguir nascer. Um ambiente além do mundo físico, um lugar
+           pra onde vão os que sonham acordados e os que dormem sonhando com aventuras
+           fantásticas. Algo como uma versão minha da Terra do Nunca.</p>
+        <p>O nome veio das nuvens “rajadinhas”. Eu gostava muito da estética: me dava
+           a impressão de que a própria nuvem tava tentando aproveitar os ventos pra
+           ir numa aventura.</p>
+        <p>A demo é pra apresentar de leve esse mundo e levar o jogador a entender e
+           mergulhar nos múltiplos controles que o jogo final vai ter. É um treino pra
+           mim também, em level design e em escrita de narrativa pela gameplay.</p>
+        <p>Fazer sozinho é uma batalha monumental, tipo Sísifo empurrando a pedra.
+           Se eu focar só no que precisa ser feito no momento, eu não fico doido.</p>
+        <p class="assinatura">Victor Beda</p>
+      </div>
+    </section>
+
+    <!-- ===== JOGAR / SEGUIR ===== -->
+    <section class="secao links" id="links">
+      <p class="rotulo">Jogar / seguir</p>
+      <h2>A demo está sendo montada.</h2>
+      <p class="aviso">Siga no X para saber quando sair.</p>
+
+      <div class="botoes">
+        <a class="botao botao-x" href="https://x.com/Veda___B" target="_blank" rel="noopener">
+          X · @Veda___B
+        </a>
+        <!-- itch.io: troque o href pelo endereço da página e apague a palavra "hidden" -->
+        <a class="botao botao-itch" href="https://itch.io/" target="_blank" rel="noopener" hidden>
+          Jogar no itch.io
+        </a>
+        <!-- Steam: troque o href pelo endereço da página e apague a palavra "hidden" -->
+        <a class="botao botao-steam" href="https://store.steampowered.com/" target="_blank" rel="noopener" hidden>
+          Lista de desejos na Steam
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p class="rodape-titulo">Cirrus</p>
+    <p>Um jogo de Victor Beda. Feito com Godot Engine.</p>
+    <p class="creditos">Fonte Free Cheese, de GGBotNet (CC0).</p>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Imagem ampliada">
+    <img alt="">
+    <button class="fechar" aria-label="Fechar">×</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
